@@ -1,8 +1,9 @@
 $(document).ready(function (){
 
-    $('.menu-toggler').click(function (){
+    $('.menu-toggle').click(function (){
 
         $('body').addClass('active');
+
 
     });
 
@@ -10,6 +11,10 @@ $(document).ready(function (){
 
         $('body').removeClass('active');
 
+
     });
+
+
+
 
 });

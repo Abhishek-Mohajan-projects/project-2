@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 header {
 
     width: 100%;
@@ -21,6 +22,7 @@ header {
 }
 
 a {
+
     text-decoration: none;
 }
 
@@ -30,13 +32,13 @@ header .logo {
     font-size: 30px;
     color: #fff;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor: pointer;
-
 
 }
 
-.menu-toggler span {
+
+.menu-toggle span {
 
     font-size: 30px;
     color: #fff;
@@ -49,8 +51,8 @@ header .logo {
 
     width: 100%;
     height: 100vh;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
 
 }
 
@@ -60,20 +62,19 @@ header .logo {
 
 }
 
-
 .overlay {
 
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #30a9f4;
     z-index: 9;
     mix-blend-mode: darken;
-    background-color: #03a9f4;
+
 
 }
-
 
 .text {
 
@@ -84,8 +85,8 @@ header .logo {
     text-align: center;
     width: 100%;
     max-width: 700px;
-    color: #fff;
     z-index: 999;
+    color: #fff;
 
 
 }
@@ -93,10 +94,10 @@ header .logo {
 .text h2 {
 
     text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 2px;
     font-size: 36px;
     line-height: 36px;
-    font-weight: 600;
     margin-bottom: 15px;
 
 }
@@ -112,53 +113,56 @@ header .logo {
 
 }
 
+
 .text .btn {
 
     text-decoration: none;
-    display: inline-block;
-    padding: 12px 30px;
+    text-transform: uppercase;
     color: #000;
-    margin-bottom: 18px;
-    font-weight: 600;
-    outline: 2px solid #fff;
-    letter-spacing: 1px;
+    padding: 12px 36px;
     background-color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: 2px solid #fff;
     transition: 0.6s all;
 
 }
 
 .text .btn:hover {
 
-    background-color: transparent;
     letter-spacing: 3px;
+    background: transparent;
     color: #fff;
 
 }
 
-.social  {
+.social {
 
-    list-style-type: none;
+	list-style-type: none;
 
+	margin-left: 7px;
 }
+
 
 .social li {
 
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 12px;
 
 }
 
 
-.social li span {
+.social  li a span  {
 
     color: #fff;
-    font-size: 26px;
+    font-size: 28px;
     transition: 0.6s all;
 
 }
 
-
-.social li span:hover {
+.social  li a span:hover {
 
     transform: translateY(10px);
 
@@ -166,21 +170,23 @@ header .logo {
 
 
 .menu {
+
     position: fixed;
     top: 0;
     right: -250px;
     bottom: 0;
+    background-color: #fff;
+    z-index: 999;
     width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    z-index: 999;
     transition: 0.6s all;
+
 }
 
 
-.menu  ul li {
+.menu ul li {
 
     list-style-type: none;
     margin-bottom: 15px;
@@ -188,12 +194,12 @@ header .logo {
 }
 
 
-.menu  ul li a {
+.menu ul li a {
 
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
     color: #000;
-    font-weight: 600;
-    font-size: 18px;
 
 }
 
@@ -202,7 +208,7 @@ header .logo {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
 
 }
